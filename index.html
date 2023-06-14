@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproductor de Música</title>
+</head>
+<body>
+<h1>Reproductor de musica</h1>
+ <div class="grid">
+            <img src="img.jpg" alt= "diseño" width="400" height="300" align="center"/>
+        </div>
+  
+  <audio src= "Laufey%20-%20Valentine%20(Official%20Audio).mp3"controls></audio>
+
+  <script>
+    var audioElement = document.querySelector('audio');
+    
+    function reproducir() {
+      audioElement.play();
+    }
+    
+    function pausar() {
+      audioElement.pause();
+    }
+    
+    function detener() {
+      audioElement.pause();
+      audioElement.currentTime = 0;
+    }
+      
+  </script>
+  
+</body>
+</html>
